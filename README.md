@@ -26,11 +26,11 @@ Register
 Login  
     <img src="/img/login.png">
 Get Logged In User
-    <img src="/img/get.png">    
+    <img src="/img/getting_user.png">    
 View Blog
     <img src="/img/viewing_the_blogs.png">
 View Single Blog
-    <img src="/img/view_a_blog">    
+    <img src="/img/view_blog">    
 View All Blog by all users
     <img src="/img/all_view.png">
 Creating Blog
