@@ -16,6 +16,7 @@
  - Change you **DB_CONNECTION** to look like this in order to use sqlite database **DB_CONNECTION=sqlite**
  - Generate your **APP_KEY** by typing this on your terminal *php artisan key:generate*
  - Generate your **JWT** by typing this on your terminal *php artisan jwt:secret*
+ - Start server *php artsan serve*
  - Use **[postman](https://web.postman.co/)** to view endpoints
 
 
@@ -26,11 +27,11 @@ Register
 Login  
     <img src="/img/login.png">
 Get Logged In User
-    <img src="/img/get_the_logged_in_user.png">    
+    <img src="/img/getting_user.png">    
 View Blog
-    <img src="/img/viewing_the_blogs.png">
+    <img src="/img/viewing_the_blog.png">
 View Single Blog
-    <img src="/img/view_a_blog">    
+    <img src="/img/blog.png">    
 View All Blog by all users
     <img src="/img/all_view.png">
 Creating Blog
