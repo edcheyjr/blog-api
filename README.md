@@ -19,32 +19,48 @@
 -   Start server _php artsan serve_
 -   # Use **[postman](https://web.postman.co/)** to view endpoints
 -   Use **[postman](https://web.postman.co/)** or any other platform for API development to view endpoints
-    > > > > > > > 14f8ebdb31131803b5a7144e185b5103d4a706b8
 
 ## End Points
 
-Register
+##### Register
+
 <img src="/img/register.png">
-Login  
+
+
+##### Login  
+
  <img src="/img/login.png">
-Get Logged In User
+
+
+##### Get Logged In User
+
 <img src="/img/getting_user.png">  
-View Blog
-<img src="/img/viewing_the_blog.png">
-View Single Blog
-<<<<<<< HEAD
+
+
+##### View Blog
+
+<img src="/img/viewing_the_blogs.png">
+
+
+##### View Single Blog
+
 <img src="/img/blog.png">  
-=======
-<img src="/img/view_blog">
 
-> > > > > > > 14f8ebdb31131803b5a7144e185b5103d4a706b8
-> > > > > > > View All Blog by all users
 
-    <img src="/img/all_view.png">
+##### View All Blogs
 
-Creating Blog
+<img src="/img/all_view.png">
+
+
+##### Creating Blog
+
 <img src="/img/creating_blog.png">
+
 Update Blog  
+
  <img src="/img/updating_blog.png">
+
 Deleting Blog
+
 <img src="/img/deleting_a_blog.png">
+
