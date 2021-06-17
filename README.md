@@ -10,14 +10,13 @@
 ## How to use it
 
 -   Ensure your have install composer **[composer download](https://getcomposer.org/download/)** Then write _composer install_ on your terminal after navigating to the directory with the pulled repository
--   Pull the repo from github **[https://github.com/edcheyjr/blog-api.git](https://github.com/edcheyjr/blog-api.git)**
+-   Pull the repo from github **[blog-api](https://github.com/edcheyjr/blog-api.git)**
 -   Copy the in env.example to env
 -   Change you **DB_CONNECTION** to look like this in order to use sqlite database **DB_CONNECTION=sqlite**
 -   Generate your **APP_KEY** by typing this on your terminal _php artisan key:generate_
 -   Generate your **JWT** by typing this on your terminal _php artisan jwt:secret_
-    <<<<<<< HEAD
--   Start server _php artsan serve_
--   # Use **[postman](https://web.postman.co/)** to view endpoints
+
+-   ### Use **[postman](https://web.postman.co/)** to view endpoints
 -   Use **[postman](https://web.postman.co/)** or any other platform for API development to view endpoints
 
 ## End Points
