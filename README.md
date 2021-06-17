@@ -20,24 +20,25 @@
 
 
 ## End Points
-Register
+
+*Register*
     <img src="/img/register.png">
-Login    
+*Login*   
     <img src="/img/login.png">
-Get Logged In User
+*Get Logged In User*
     <img src="/img/get_the_logged_in_user.png>    
-View Blog
+*View Blog*
     <img src="/img/viewing_the_blogs.png">
-View Single Blog
+*View Single Blog*
     <img src="/img/view_a_blog">    
-View All Blog by all users
+*View All Blog by all users*
     <img src="/img/all_view.png">
-Creating Blog
+*Creating Blog*
     <img src="/img/creating_blog.png">
-Update Blog   
+*Update Blog*
     <img src="/img/updating_blog.png">
-Deleting Blog
-    <img src="/img/deleting_blog.png">    
+*Deleting Blog*
+    <img src="/img/deleting_a_blog.png">    
 
     
 
