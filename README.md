@@ -56,11 +56,11 @@
 
 <img src="/img/creating_blog.png">
 
-Update Blog  
+##### Update Blog  
 
  <img src="/img/updating_blog.png">
 
-Deleting Blog
+##### Deleting Blog
 
 <img src="/img/deleting_a_blog.png">
 
