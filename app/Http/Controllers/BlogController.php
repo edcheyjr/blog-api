@@ -42,7 +42,7 @@ class BlogController extends Controller
         $data = $request->only('blog_title', 'blog_content');
         $validator = Validator::make($data, [
             'blog_title' => 'required|string',
-            'blog_contet' => 'required',
+            'blog_content' => 'required|string',
         ]);
         //Send failed response if request is not valid
         if ($validator->fails()) {
@@ -50,7 +50,7 @@ class BlogController extends Controller
         }
 
         //Request is valid, create new blog
-        $product = $this->user->products()->create([
+        $product = $this->user->blog()->create([
             'blog_title' => $request->blog_title,
             'blog_content' => $request->blog_content,
         ]);
@@ -63,6 +63,10 @@ class BlogController extends Controller
         ], Response::HTTP_OK);
     }
 
+    public function all()
+    {
+        return Blog::all();
+    }
     /**
      * Display the specified resource.
      *
@@ -72,12 +76,12 @@ class BlogController extends Controller
     public function show($id)
     {
         //show blog
-        $blog = $this->user->products()->find($id);
+        $blog = $this->user->blog()->find($id);
 
         if (!$blog) {
             return response()->json([
                 'success' => false,
-                'message' => 'Sorry, product not found.'
+                'message' => 'Sorry, blog not found.'
             ], 400);
         }
 
@@ -97,7 +101,7 @@ class BlogController extends Controller
         $data = $request->only('blog_title', 'blog_content');
         $validator = Validator::make($data, [
             'blog_title' => 'required|string',
-            'blog_content' => 'string',
+            'blog_content' => 'required|string',
         ]);
         //Send failed response if request is not valid
         if ($validator->fails()) {
@@ -111,7 +115,7 @@ class BlogController extends Controller
         //Product updated, return success response
         return response()->json([
             'success' => true,
-            'message' => 'Product updated successfully',
+            'message' => 'Blog updated successfully',
             'data' => $blog
         ], Response::HTTP_OK);
     }
@@ -128,7 +132,7 @@ class BlogController extends Controller
 
         return response()->json([
             'success' => true,
-            'message' => 'Product deleted successfully'
+            'message' => 'Blog deleted successfully'
         ], Response::HTTP_OK);
     }
 }

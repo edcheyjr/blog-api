@@ -16,18 +16,17 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
 Route::post('login', [ApiController::class, 'authenticate']);
 Route::post('register', [ApiController::class, 'register']);
-Route::get('open', [ViewAllController::class,'open']);
-
+Route::get('blog/all', [BlogController::class, 'all']);
 
 
 Route::group(['middleware' => ['jwt.verify']], function () {
-    Route::get('close', [ViewAllController::class, 'close']);
+    Route::get('blog', [BlogController::class, 'index']);
     Route::get('logout', [ApiController::class, 'logout']);
     Route::get('get_user', [ApiController::class, 'get_user']);
-    // Route::resources('blog',[BlogController::class]);
-    Route::get('blog', [BlogController::class, 'index']);
+
     Route::get('blog/{id}', [BlogController::class, 'show']);
     Route::post('blog/create', [BlogController::class, 'store']);
     Route::put('update/{blog}',  [BlogController::class, 'update']);

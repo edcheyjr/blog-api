@@ -14,7 +14,7 @@ class Blog extends Model
         return $this->belongsTo(User::class);
     }
     protected $fillable = [
-        'blog_name',
+        'blog_title',
         'blog_content',
     ];
 }
