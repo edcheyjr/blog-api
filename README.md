@@ -12,7 +12,14 @@
 -   Ensure your have install composer **[composer download](https://getcomposer.org/download/)** Then write _composer install_ on your terminal after navigating to the directory with the pulled repository
 -   Pull the repo from github **[blog-api](https://github.com/edcheyjr/blog-api.git)**
 -   Copy the in env.example to env
--   Change you **DB_CONNECTION** to look like this in order to use sqlite database **DB_CONNECTION=sqlite**
+-   Change you **DB_CONNECTION** to look like this in order to use sqlite database ```DB_CONNECTION=sqlite``` or make neccessary adjustment if using another management system database system by default it comes as mysql configured as show below:
+
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=laravel
+    DB_USERNAME=root
+    DB_PASSWORD=
 -   Generate your **APP_KEY** by typing this on your terminal ```php artisan key:generate```
 -   Generate your **JWT** by typing this on your terminal ```php artisan jwt:secret```
 
