@@ -13,8 +13,8 @@
 -   Pull the repo from github **[blog-api](https://github.com/edcheyjr/blog-api.git)**
 -   Copy the in env.example to env
 -   Change you **DB_CONNECTION** to look like this in order to use sqlite database **DB_CONNECTION=sqlite**
--   Generate your **APP_KEY** by typing this on your terminal _php artisan key:generate_
--   Generate your **JWT** by typing this on your terminal _php artisan jwt:secret_
+-   Generate your **APP_KEY** by typing this on your terminal ```php artisan key:generate```
+-   Generate your **JWT** by typing this on your terminal ```php artisan jwt:secret```
 
 -   ### Use **[postman](https://web.postman.co/)** to view endpoints
 -   Use **[postman](https://web.postman.co/)** or any other platform for API development to view endpoints
