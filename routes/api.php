@@ -1,8 +1,7 @@
 <?php
 
-use App\Http\Controllers\ApiController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\BlogController;
-use App\Http\Controllers\ViewAllController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,15 +16,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('login', [ApiController::class, 'authenticate']);
-Route::post('register', [ApiController::class, 'register']);
+Route::post('login', [UserController::class, 'authenticate']);
+Route::post('register', [UserController::class, 'register']);
 Route::get('blog/all', [BlogController::class, 'all']);
 
 
 Route::group(['middleware' => ['jwt.verify']], function () {
     Route::get('blog', [BlogController::class, 'index']);
-    Route::get('logout', [ApiController::class, 'logout']);
-    Route::get('get_user', [ApiController::class, 'get_user']);
+    Route::get('logout', [UserController::class, 'logout']);
+    Route::get('get_user', [UserController::class, 'get_user']);
 
     Route::get('blog/{id}', [BlogController::class, 'show']);
     Route::post('blog/create', [BlogController::class, 'store']);

@@ -9,12 +9,12 @@ use Tymon\JWTAuth\Exceptions\JWTException;
 use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Support\Facades\Validator;
 
-class ApiController extends Controller
+class UserController extends Controller
 {
     public function register(Request $request)
     {
         //Validate data
-        $data = $request->only('name', 'email', 'username','password');
+        $data = $request->only('name', 'email', 'username', 'password');
         $validator = Validator::make($data, [
             'name' => 'required|string',
             'username' => 'required|string|unique:users',
